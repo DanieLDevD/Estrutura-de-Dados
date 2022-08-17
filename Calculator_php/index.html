@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="bg-dark">
+    <div class="container">
+        <div class="card card-login mx-auto mt-5 col-6">
+            <div class="card card-header text-center">Minha Calculadora</div>
+            <div class="card-body">
+                <form action="calculadora.php" method="post"></form>
+                <div class="form-group">
+                    <select name="opcao" class="form-control">
+                        <option selected>Escolha a operação desejada </option>
+                        <option value="soma">Soma</option>
+                        <option value="sub">Subtração</option>
+                        <option value="divisao">Divisão</option>
+                        <option value="mult">Multiplicação</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Digite um Número</label>
+                    <input type="number" class="form-control" name="num1" placeholder="Digite um número">
+                    <label for="">Digite um Número</label>
+                    <input type="number" class="form-control" name="num2" placeholder="Digite um número">
+                </div>
+                <button class="btn btn-success btn-block">Calcular</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
